@@ -15,6 +15,15 @@
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".MyTickets"
+            android:exported="false" />
+        <activity
+            android:name=".TelaInicial"
+            android:exported="false" />
+        <activity
             android:name=".RecuperarSenha"
             android:exported="false" />
         <activity

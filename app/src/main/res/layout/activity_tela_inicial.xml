@@ -1,0 +1,148 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".TelaInicial">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/input"
+        android:layout_width="370dp"
+        android:layout_height="603dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/from_location"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:hint="Local de Saída"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <EditText
+            android:id="@+id/to_location"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:hint="Destino"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/from_location"
+            app:layout_constraintVertical_bias="0.008" />
+
+        <EditText
+            android:id="@+id/travel_date"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:hint="Data da Viagem"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/to_location"
+            app:layout_constraintVertical_bias="0.054" />
+
+        <EditText
+            android:id="@+id/travel_date_back"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="276dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:hint="Data do retorno"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/passenger_count"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:hint="Passageiros"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/travel_date"
+            app:layout_constraintVertical_bias="0.318" />
+
+        <EditText
+            android:id="@+id/travel_class"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:clickable="true"
+            android:drawablePadding="8dp"
+            android:hint="Embarcação"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passenger_count"
+            app:layout_constraintVertical_bias="0.076" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button"
+            android:text="Buscar"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.931" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/colorAccent"
+        app:itemTextColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />  <!-- Seu menu de navegação -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
