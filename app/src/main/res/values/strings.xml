@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">Login</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="remember_me">Salvar login</string>
+    <string name="esqueciMinhaSenha">Esqueci minha senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="registrar">Não tem conta?</string>
+
+    <string name="register">Criar conta</string>
+    <string name="criarConta">Criar conta</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="registerEmail">E-mail</string>
+    <string name="registerSenha">Senha</string>
+    <string name="confirmarSenha">Senha</string>
+    <string name="cpf">CPF</string>
+    <string name="dataDeNascimento">Data de nascimento</string>
+
+    <string name="default_web_client_id">
+        806538821341-bq8rvoj8r16ru98lbd93f2spbn3799n2.apps.googleusercontent.com
+    </string>
+
+    <string name="forgot_pass">
+        Esqueceu sua senha?
+    </string>
+    <string name="enter_your_">
+        Insira seu e-mail cadastrado, nós vamos enviar um código para você.
+    </string>
+    <string name="continuar">
+        Continuar
+    </string>
+    <string name="title_activity_tela_inicial">TelaInicial</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

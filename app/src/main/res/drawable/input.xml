@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="343dp"
+        android:height="581dp"
+        android:viewportWidth="343"
+        android:viewportHeight="581">
+
+        <group>
+            <!-- Definindo o contorno arredondado usando clip-path -->
+            <clip-path android:pathData="M12 0H331C337.627 0 343 5.37258 343 12V569C343 575.627 337.627 581 331 581H12C5.37258 581 0 575.627 0 569V12C0 5.37258 5.37258 0 12 0Z"/>
+
+            <!-- Definindo o fundo branco -->
+            <path android:pathData="M0 0V581H343V0" android:fillColor="#FFFFFF"/>
+        </group>
+    </vector>
+
+</selector>

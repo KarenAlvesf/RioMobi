@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "806538821341",
+    "project_id": "myapplication-883dc",
+    "storage_bucket": "myapplication-883dc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806538821341:android:d6bd130c91adb551fca534",
+        "android_client_info": {
+          "package_name": "com.example.rioMobi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806538821341-lj29238ihmua5f186ht8dgqtg2o4fpo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rioMobi",
+            "certificate_hash": "a843877f769e28f558e1e895db420010eb7de646"
+          }
+        },
+        {
+          "client_id": "806538821341-bq8rvoj8r16ru98lbd93f2spbn3799n2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKoflpx-1shWr0ZXqPXv1miSHmEy7SoqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806538821341-bq8rvoj8r16ru98lbd93f2spbn3799n2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

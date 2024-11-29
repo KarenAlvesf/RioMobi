@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".RecuperarSenha">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/input"
+        android:layout_width="343dp"
+        android:layout_height="650dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:id="@+id/forgot_pass"
+            android:layout_width="279dp"
+            android:layout_height="102dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/plus_jakarta_sans_variablefont_wght"
+            android:gravity="top"
+            android:lineHeight="40sp"
+            android:lineSpacingExtra="-13sp"
+            android:text="@string/forgot_pass"
+            android:textAppearance="@style/forgot_pass"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/enter_your_"
+            android:layout_width="287dp"
+            android:layout_height="43dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/plus_jakarta_sans_variablefont_wght"
+            android:gravity="top"
+            android:text="@string/enter_your_"
+            android:textAppearance="@style/enter_your_"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.243" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="304dp"
+            android:fontFamily="@font/plus_jakarta_sans_variablefont_wght"
+            android:gravity="top"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/email"
+            android:textAppearance="@style/email"
+            android:textColor="#333333"
+            android:translationY="-2.04sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/e_mail"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/rounded_edittext_background"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColorHint="#888888"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.544" />
+
+        <Button
+            android:id="@+id/buttonContinuar"
+            android:layout_width="295dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button"
+            android:clipToOutline="true"
+            android:gravity="center"
+            android:text="@string/continuar"
+            android:textAppearance="@style/ButtonTextStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.77" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="267dp"
+        android:layout_height="114dp"
+        android:src="@drawable/yellow_bright_woman_avatar"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
